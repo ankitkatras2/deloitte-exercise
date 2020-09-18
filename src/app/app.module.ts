@@ -10,11 +10,13 @@ import { ProductsSearchComponent } from './products-search/products-search.compo
 import { HttpClientModule } from '@angular/common/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FilterComponent } from './filter/filter.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProductsSearchComponent
+    ProductsSearchComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
