@@ -10,6 +10,7 @@ export class FilterComponent implements OnInit {
   val1: number = 50;
   myFormGroup: FormGroup;
   categories: any[] = [{ name: 'Lounge', key: 'L' }, { name: 'Table', key: 'M' }, { name: 'Chair', key: 'P' }, { name: 'Shelves', key: 'R' }];
+
   constructor(private fb: FormBuilder) {
     this.myFormGroup = fb.group({
       'collection': [],
@@ -24,9 +25,5 @@ export class FilterComponent implements OnInit {
 
   handleChange(e) {
     //e.value is the new value
-  }
-
-  getForm() {
-    console.log(this.myFormGroup.value);
   }
 }

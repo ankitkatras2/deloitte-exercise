@@ -23,6 +23,7 @@ export class ProductsSearchComponent implements OnInit {
     this.getProducts();
   }
 
+  // Code to fetch the product from the service
   getProducts() {
     this.loading = true;
     this.productService.getProducts().subscribe(data => {
@@ -34,6 +35,7 @@ export class ProductsSearchComponent implements OnInit {
     this.loading = false;
   }
 
+  // Code to fetch clicked product id and navigate to product details page
   gotoDetails(id) {
     sessionStorage.setItem('productId', id);
     this.router.navigate(['/detail']);

@@ -12,6 +12,7 @@ export class ProductsService {
     });
   }
 
+  // Fetches the products from the JSON file
   public getProducts(): Observable<any> {
     return this.http.get("./assets/products.json");
   }

@@ -4,18 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductsSearchComponent } from './products-search/products-search.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FilterComponent } from './filter/filter.component';
-import {AccordionModule} from 'primeng/accordion';
-import {SliderModule} from 'primeng/slider';
-import {CheckboxModule} from 'primeng/checkbox';
+
+// 3rd party libraries
+import { AccordionModule } from 'primeng/accordion';
+import { SliderModule } from 'primeng/slider';
+import { CheckboxModule } from 'primeng/checkbox';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
-import {ProgressSpinnerModule} from 'primeng/progressspinner';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,8 +35,10 @@ import {ProgressSpinnerModule} from 'primeng/progressspinner';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgbModule,
+
+    // 3rd party libraries
     AccordionModule,
+    NgbModule,
     SliderModule,
     CheckboxModule,
     ProgressSpinnerModule

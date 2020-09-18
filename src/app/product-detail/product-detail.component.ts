@@ -16,6 +16,7 @@ export class ProductDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // Code used to call the service and fetch the products and filter based on Id
     this.productService.getProducts().subscribe(data => {
       const products = data.products;
       this.product = products.filter(x => x.id === Number(sessionStorage.getItem('productId')));
