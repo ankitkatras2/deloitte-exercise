@@ -14,12 +14,15 @@ import { FilterComponent } from './filter/filter.component';
 import {AccordionModule} from 'primeng/accordion';
 import {SliderModule} from 'primeng/slider';
 import {CheckboxModule} from 'primeng/checkbox';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import {ProgressSpinnerModule} from 'primeng/progressspinner';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ProductsSearchComponent,
-    FilterComponent
+    FilterComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import {CheckboxModule} from 'primeng/checkbox';
     NgbModule,
     AccordionModule,
     SliderModule,
-    CheckboxModule
+    CheckboxModule,
+    ProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
