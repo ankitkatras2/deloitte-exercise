@@ -12,15 +12,4 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // searchIcon() {
-  //   $(".nav").toggleClass("search");
-  //   $(".nav").toggleClass("no-search");
-  //   $(".search-input").toggleClass("search-active");
-  // };
-
-  // menuToggle() {
-  //   $(".nav").toggleClass("mobile-nav");
-  //   $(this).toggleClass("is-active");
-  // };
-
 }

@@ -1,0 +1,61 @@
+<div id="container">
+
+    <!-- Start	Product details -->
+    <div class="product-details">
+
+        <!-- 	Product Name -->
+        <h1>{{product[0].name}}</h1>
+        <span class="hint-star star">
+            <ngb-rating [rate]="product[0].rating"></ngb-rating>
+        </span>
+
+
+        <!-- The most important information about the product -->
+        <p class="information">" Van Shoes makes handcrafted men's shoes in the heart of Budapest. I made a concept producct page for practice which in my opnion represents their qualities better than their current site "</p>
+
+
+
+        <!-- 		Control -->
+        <div class="control">
+
+            <!-- Start Button buying -->
+            <button class="btn">
+    <!-- 		the Price -->
+         <span class="price">${{product[0].price}}</span>
+    <!-- 		shopping cart icon-->
+       <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+    <!-- 		Buy Now / ADD to Cart-->
+       <span class="buy">Buy Now</span>
+     </button>
+            <!-- End Button buying -->
+
+        </div>
+
+    </div>
+
+    <!-- 	End	Product details   -->
+
+
+
+    <!-- 	Start product image & Information -->
+
+    <div class="product-image">
+
+        <img src="../../assets/images/{{product[0].image}}">
+
+        <!-- 	product Information-->
+        <div class="info">
+            <h2>The Description</h2>
+            <ul>
+                <li><strong>Wood Type: </strong>Oak</li>
+                <li><strong>Humidity: </strong>Medium</li>
+                <li><strong>Zones: </strong>Outdoor + Indoor</li>
+                <li><strong>Height: </strong>3.5 feet</li>
+                <li><strong>Features: </strong>No Armrest</li>
+            </ul>
+        </div>
+    </div>
+    <!--  End product image  -->
+
+
+</div>
