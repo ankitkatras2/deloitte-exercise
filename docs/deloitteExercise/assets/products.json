@@ -1,0 +1,45 @@
+{
+    "products": [{
+        "id": 1,
+        "name": "Coombes",
+        "image": "Coombes.png",
+        "price": "2600",
+        "category": "Lounge",
+        "rating": 4
+    }, {
+        "id": 5,
+        "name": "Keeve Set",
+        "image": "KeeveSet.jpg",
+        "price": "590",
+        "category": "Table & Chairs",
+        "rating": 3
+    }, {
+        "id": 2,
+        "name": "Nille",
+        "image": "Nille.jpg",
+        "price": "950",
+        "category": "Armchair",
+        "rating": 5
+    }, {
+        "id": 3,
+        "name": "Momo",
+        "image": "Momo.jpg",
+        "price": "890",
+        "category": "Shelves",
+        "rating": 3
+    }, {
+        "id": 4,
+        "name": "Penemille",
+        "image": "Penemille.jpg",
+        "price": "120",
+        "category": "Chair",
+        "rating": 4
+    }, {
+        "id": 6,
+        "name": "Kappu",
+        "image": "Kappu.jpg",
+        "price": "420",
+        "category": "Shelves",
+        "rating": 1
+    }]
+}
