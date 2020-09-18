@@ -1,1 +1,19 @@
-<p>filter works!</p>
+<span class="filterByText">FILTER BY</span>
+<p-accordion [multiple]="true">
+    <p-accordionTab header="Collection">
+        <div *ngFor="let category of categories" class="p-field-checkbox">
+            <p-checkbox name="group2" value="category" [value]="category" [formControl]="myFormGroup.controls['collection']" [inputId]="category.key"></p-checkbox>
+            <label [for]="category.key">{{category.name}}</label>
+        </div>
+        <button (click)="getForm()">Click</button>
+    </p-accordionTab>
+    <p-accordionTab header="Color">
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+    </p-accordionTab>
+    <p-accordionTab header="Category">
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui </p>
+    </p-accordionTab>
+    <p-accordionTab header="Price Range" [selected]="true">
+        <p-slider (ngModel)="val1" (onChange)="handleChange($event)"></p-slider>
+    </p-accordionTab>
+</p-accordion>
